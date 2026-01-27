@@ -1,0 +1,96 @@
+/* Variables de color */
+:root {
+    --primary-blue: #2d3192;
+    --dark-blue: #1b1e5a;
+    --accent-cyan: #00d2ff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.bg-primary-dark {
+    background-color: var(--primary-blue);
+    padding: 1rem 0;
+}
+
+/* Hero con degradado y forma */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    padding: 120px 0 180px 0; /* Padding inferior grande para las tarjetas */
+    position: relative;
+    overflow: hidden;
+}
+
+/* El efecto de las tarjetas que sobresalen */
+.services-section {
+    margin-top: -100px; /* Sube las tarjetas hacia el hero */
+    position: relative;
+    z-index: 10;
+}
+
+/* Estilo de Tarjetas */
+.service-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.bg-custom-blue {
+    background-color: #24287e;
+}
+
+/* Iconos */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+/* Botones */
+.btn-info {
+    background-color: var(--accent-cyan);
+    border: none;
+}
+
+.btn-primary-dark {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.main-img {
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+}
+
+/* Estilos para página de Servicios */
+.page-header {
+    margin-top: 76px; /* Altura aproximada del navbar */
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    padding: 60px 0;
+}
+
+.tech-badge {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+}
+
+.project-img {
+    height: 200px;
+    object-fit: cover;
+    background-color: #e9ecef;
+}
