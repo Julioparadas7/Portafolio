@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servidores - Detalles</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-dark fixed-top">
+      <div class="container">
+        <span class="navbar-brand fw-bold">Ing. Sistemas: Julio Paradas</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-info ms-lg-3 px-4 text-white"
+                href="https://wa.me/qr/4LXZUGPQ6O3LF1"
+                target="_blank"
+              >
+                Contáctame
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header de la página -->
+    <header class="page-header text-white text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Administración de Servidores</h1>
+        <p class="lead">
+          Implementación, virtualización y gestión de infraestructura
+        </p>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Item 1: Windows Server -->
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-3" style="color: var(--primary-blue)">
+              Windows Server & Active Directory
+            </h3>
+            <p class="lead text-muted">
+              Gestión centralizada de usuarios y recursos.
+            </p>
+            <p>
+              Implementación de Windows Server para entornos corporativos.
+              Configuración de Active Directory Domain Services (AD DS), DNS,
+              DHCP y Políticas de Grupo (GPO) para asegurar el control de acceso
+              y la seguridad de la red.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow overflow-hidden">
+              <img
+                src="imagenes/servidores_windows.jpg"
+                class="w-100"
+                alt="Windows Server"
+                style="
+                  height: 400px;
+                  object-fit: contain;
+                  background-color: var(--primary-blue);
+                "
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/600x400?text=Windows+Server'
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Proxmox (Imagen Izquierda) -->
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="card border-0 shadow overflow-hidden">
+              <img
+                src="imagenes/servidores_1.jpeg"
+                class="w-100"
+                alt="Proxmox VE"
+                style="
+                  height: 400px;
+                  object-fit: contain;
+                  background-color: var(--primary-blue);
+                "
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/600x400?text=Proxmox+VE'
+                "
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-3" style="color: var(--primary-blue)">
+              Virtualización con Proxmox
+            </h3>
+            <p class="lead text-muted">
+              Optimización de hardware mediante entornos virtuales.
+            </p>
+            <p>
+              Despliegue y administración de Proxmox VE. Creación de máquinas
+              virtuales (VMs) y contenedores LXC para maximizar el uso de los
+              recursos del servidor, incluyendo gestión de backups y snapshots
+              para alta disponibilidad.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Ubuntu Server -->
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h3 class="fw-bold mb-3" style="color: var(--primary-blue)">
+              Ubuntu Server y Linux
+            </h3>
+            <p class="lead text-muted">
+              Servidores robustos y seguros de código abierto.
+            </p>
+            <p>
+              Instalación y hardening de servidores Linux (Ubuntu/Debian).
+              Despliegue de servicios web (Apache/Nginx), bases de datos y
+              automatización de tareas mediante scripts en Bash.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow overflow-hidden">
+              <img
+                src="imagenes/servidores_2.jpeg"
+                class="w-100"
+                alt="Ubuntu Server"
+                style="
+                  height: 400px;
+                  object-fit: contain;
+                  background-color: var(--primary-blue);
+                "
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/600x400?text=Ubuntu+Server'
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón Volver -->
+        <div class="text-center mt-5">
+          <a href="index.html" class="btn btn-primary-dark px-5 rounded-pill"
+            >Volver al Inicio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
